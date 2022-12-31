@@ -1,0 +1,72 @@
+#
+# Compile and link ADAS211 FORTRAN
+#
+
+$CC $CFLAGS  -c  $ADASTOP/C/adaslib/pers_f_.c
+
+$FF $FFLAGS -o $BIN/adas211.out   \
+adas211.for \
+adwlpol.for \
+bbspf0.for \
+bbspf1.for \
+bbrint.for  \
+bbitrp.for  \
+bbspln.for  \
+adwrd2.for \
+agiidw.for \
+aphotdw.for \
+zeff.for \
+zeffl.for \
+zser.for \
+ass.for \
+ass2.for \
+bbprs1.for \
+bbprs3.for \
+bdcf3.for \
+bdcf4.for \
+bdcf7.for \
+delta2.for \
+dnamp.for \
+dnaq.for \
+dnprod.for \
+effz3.for \
+fcf6.for \
+gama6.for \
+gext.for \
+pchg.for \
+pchx.for \
+phase.for \
+rd2fs.for \
+wig6j.for \
+$ADASTOP/fortran/adas3xx/adas310/gbf.for \
+$ADASTOP/fortran/adaslib/atomic/argam.for \
+$ADASTOP/fortran/adaslib/atomic/ceigrp.for \
+$ADASTOP/fortran/adaslib/atomic/cstgrp.for \
+$ADASTOP/fortran/adaslib/atomic/i4lgrp.for \
+$ADASTOP/fortran/adaslib/atomic/i4ngrp.for \
+$ADASTOP/fortran/adaslib/atomic/i4pgrp.for \
+$ADASTOP/fortran/adaslib/atomic/i4schr.for \
+$ADASTOP/fortran/adaslib/atomic/xfelem.for \
+$ADASTOP/fortran/adaslib/atomic/xxcftr.for \
+$ADASTOP/fortran/adaslib/atomic/xxcmps.for \
+$ADASTOP/fortran/adaslib/atomic/xxdtes.for \
+$ADASTOP/fortran/adaslib/maths/eei.for \
+$ADASTOP/fortran/adaslib/maths/lngama.for \
+$ADASTOP/fortran/adaslib/maths/r8fun1.for \
+$ADASTOP/fortran/adaslib/maths/xxspln.for \
+$ADASTOP/fortran/adaslib/system/i4unit.for \
+$ADASTOP/fortran/adaslib/system/xx0000.for \
+$ADASTOP/fortran/adaslib/system/xxdate.for \
+$ADASTOP/fortran/adaslib/system/xxdsn2.for \
+$ADASTOP/fortran/adaslib/system/xxflsh.for \
+$ADASTOP/fortran/adaslib/system/xxname.for \
+$ADASTOP/fortran/adaslib/utility/i4fctn.for \
+$ADASTOP/fortran/adaslib/utility/r8fctn.for \
+$ADASTOP/fortran/adaslib/utility/lenstr.for \
+$ADASTOP/fortran/adaslib/utility/xxcase.for \
+$ADASTOP/fortran/adaslib/utility/xxslen.for \
+$ADASTOP/fortran/adaslib/utility/xxsort.for \
+$ADASTOP/fortran/adaslib/utility/xxstuc.for \
+$ADASTOP/fortran/adaslib/utility/xxword.for \
+$ADASTOP/fortran/adaslib/xxdata/xxdata_37.for \
+pers_f_.o
