@@ -1,0 +1,42 @@
+Steps to get adas7#3 running outside the ADAS environment
+=========================================================
+
+1. A number of source files are required from central ADAS. The
+   copy_central_adas7#3 script copies these from the central
+   location, given by the ADASTOP environment variable, to a
+   local sub-directory named central/. The copy script makes
+   this sub-directory in the directory from where it is launched.
+
+2. Edit the compilation script, fortran/comp_7#3 to alter the 
+   central ADAS sub-directory locations to central/.
+
+   eg. change $ADASTOP/fortran/adaslib/utility/xxslen.for \
+       to     central/xxslen.for \
+
+   Either set CC, COMPILER, EXTRAFF and BIN via environment
+   variables or replace with the actual commands or required
+   destinations. Some recommendations are
+      CC : gcc -c
+      COMPILER : gfortran
+      EXTRAFF : -g -O2 -mcmodel=large
+      BIN : bin/
+   For the latter make sure a bin/ directory is created.
+
+3. The binary accepts command line arguments, 3 adf04 files
+   specifying the two adf04 files to merge and the output
+   file, followed by a log file. Command line options to
+   specify the preferred source of energy levels and transitions
+   as well as the format of the configurations are optional.
+   
+   Usage: adas7#5.x [options] adf04_1 adf04_2 adf04_output
+             -l 1 (or 2) to select preferred adf04 file for levels
+             -t 1 (or 2) to select preferred adf04 file for transitions
+             -c eissner (or standard) for choice of the format of
+                        configurations in the output adf04 file
+
+   eg. offline_adas/adas7#5/bin/adas7#5.x \
+                  /home/adas/adas/adf04/nist#26/ic#fe2.dat \
+                  /home/adas/adas/adf04/crlike/crlike_nrb13#fe2.dat \
+                  fe2_revised.dat \
+                  paper-fe2.txt \
+                  -l 1 -t 2 -c eissner

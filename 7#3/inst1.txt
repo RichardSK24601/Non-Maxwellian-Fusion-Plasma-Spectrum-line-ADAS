@@ -1,0 +1,6 @@
+ &instruction
+   adf04_in  = '/home/adas/adas/adf04/adas#2/mom97_ls#he0.dat',
+   adf04_out = '/home/cg0527/7#3/he_rate.dat',
+   adf37 = '/home/cg0527/7#3/test_write_adf37.dat'
+   i04type = 3
+ &end

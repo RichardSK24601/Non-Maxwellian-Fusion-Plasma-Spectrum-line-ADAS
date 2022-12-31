@@ -1,0 +1,45 @@
+# Compile and link adf04_om2ups FORTRAN
+#
+
+gcc -c  central/pers_f_.c \
+        central/today_.c
+
+gfortran -g -mcmodel=large -ffpe-trap=invalid,zero,overflow -o bin/adf04_om2ups.x \
+fortran/adf04_om2ups.for \
+fortran/h9cvrt.for       \
+fortran/h9ntqd.for       \
+fortran/h9qd3b.for       \
+fortran/remapx.for       \
+central/bfttyp.for    \
+central/bxttyp.for    \
+central/h9tran.for    \
+central/h9trni.for    \
+central/i4idfl.for     \
+central/xfesym.for     \
+central/xxprs1.for     \
+central/ee2.for         \
+central/eei.for         \
+central/ingama.for      \
+central/ingamq.for      \
+central/lngama.for      \
+central/r8fun1.for      \
+central/xxsple.for      \
+central/i4unit.for     \
+central/xxname.for     \
+central/xxtoday.for    \
+central/i4fctn.for    \
+central/lenstr.for    \
+central/r8fctn.for    \
+central/xxcase.for    \
+central/xxcomm.for    \
+central/xxpars.for    \
+central/xxrmve.for    \
+central/xxslen.for    \
+central/xxword.for    \
+central/xxwstr.for    \
+central/xxdata_04.for  \
+central/xxdata_37.for  \
+central/xxwrto_04.for  \
+pers_f_.o \
+today_.o
+

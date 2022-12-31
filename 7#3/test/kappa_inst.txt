@@ -1,0 +1,6 @@
+ &instruction
+   adf04_in  = '/home/cg0527/adas/adf04/carbon_test/ic_c5#test.dat',
+   adf04_out = 'c5_Newdisdemo.dat',
+   adf37 = '/home/cg0527/7#3/test/test_write_adf37.dat'
+   i04type = 4
+ &end

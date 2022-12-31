@@ -1,0 +1,38 @@
+# Script to copy central ADAS files to a central/ directory.
+#
+
+mkdir -p central
+
+cp $ADASTOP/C/adaslib/pers_f_.c  ./central/
+cp $ADASTOP/C/adaslib/today_.c  ./central/
+
+cp $ADASTOP/fortran/adas2xx/adas215/bfttyp.for    ./central/
+cp $ADASTOP/fortran/adas2xx/adaslib/bxttyp.for    ./central/
+cp $ADASTOP/fortran/adas8xx/adas809/h9tran.for    ./central/
+cp $ADASTOP/fortran/adas8xx/adas809/h9trni.for    ./central/
+cp $ADASTOP/fortran/adaslib/atomic/i4idfl.for     ./central/
+cp $ADASTOP/fortran/adaslib/atomic/xfesym.for     ./central/
+cp $ADASTOP/fortran/adaslib/atomic/xxprs1.for     ./central/
+cp $ADASTOP/fortran/adaslib/maths/ee2.for         ./central/
+cp $ADASTOP/fortran/adaslib/maths/eei.for         ./central/
+cp $ADASTOP/fortran/adaslib/maths/ingama.for      ./central/
+cp $ADASTOP/fortran/adaslib/maths/ingamq.for      ./central/
+cp $ADASTOP/fortran/adaslib/maths/lngama.for      ./central/
+cp $ADASTOP/fortran/adaslib/maths/r8fun1.for      ./central/
+cp $ADASTOP/fortran/adaslib/maths/xxsple.for      ./central/
+cp $ADASTOP/fortran/adaslib/system/i4unit.for     ./central/
+cp $ADASTOP/fortran/adaslib/system/xxname.for     ./central/
+cp $ADASTOP/fortran/adaslib/system/xxtoday.for    ./central/
+cp $ADASTOP/fortran/adaslib/utility/i4fctn.for    ./central/
+cp $ADASTOP/fortran/adaslib/utility/lenstr.for    ./central/
+cp $ADASTOP/fortran/adaslib/utility/r8fctn.for    ./central/
+cp $ADASTOP/fortran/adaslib/utility/xxcase.for    ./central/
+cp $ADASTOP/fortran/adaslib/utility/xxcomm.for    ./central/
+cp $ADASTOP/fortran/adaslib/utility/xxpars.for    ./central/
+cp $ADASTOP/fortran/adaslib/utility/xxrmve.for    ./central/
+cp $ADASTOP/fortran/adaslib/utility/xxslen.for    ./central/
+cp $ADASTOP/fortran/adaslib/utility/xxword.for    ./central/
+cp $ADASTOP/fortran/adaslib/utility/xxwstr.for    ./central/
+cp $ADASTOP/fortran/adaslib/xxdata/xxdata_04.for  ./central/
+cp $ADASTOP/fortran/adaslib/xxdata/xxdata_37.for  ./central/
+cp $ADASTOP/fortran/adaslib/xxdata/xxwrto_04.for  ./central/
