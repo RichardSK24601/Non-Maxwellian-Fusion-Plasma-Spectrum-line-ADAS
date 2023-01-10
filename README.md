@@ -13,6 +13,11 @@ The code and documentation of non-Maxwellian Fusion plasma modeling based on ADA
 
 ## Electron Energy Distribution Function <a name="EEDF"></a>
 
+The Electron Energy Distribution Function(EEDF), was used to determine the ionization and recombination rate coefficient of ions within the plasma.
+For the ionization rate coefficient it is simply a convolution bewtween the ionization crosssection of the ions and the EEDF. A typical ionization crosssection is shown in fig. the convolution witht the EEDF resulted in fig..
+
+In the python scripts, there are several functions that were used to generate toy EEDF. The Maxwellian EEDF was encoded in (func). As a slight perturbation to the Maxwellian distribution, the Kappa distribution was also included in the simulation.
+
 ## Ionization Rate <a name="IR"></a>
 
 ## Recombination Rate <a name="RR"></a>
